@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <!--compatibilité des navigateurs. Permet de choisir dans quelle version d'IE la page va être choisie-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Avec name='viewport' valeur donnée à content indique comment le navigateur affiche la page sur les différents appareils-->
+    <!--initial scale définit le niveau de zoom initial. Entre 1 et 10-->
+    <link rel="stylesheet" href="jeu.css">
+    
+    <title>Mon premier jeu</title>
+  </head>
+
+  <body>
+    <div id="timer"></div>
+    <p class="message"></p>
+    <section>
+      <div class="calcul">
+          <h1 class="nb1">2</h1>
+          <h1 class="op">+</h1>
+          <h1 class="nb2">8</h1>
+      </div>
+ 
+      <h2>Donner la réponse</h2>
+        <input type="number" name="reponse" class="rep">
+        <input type="submit" name="bouton" onclick="verifier()">
+        <!--La balise button ne donne pas le même résultat en cssa-->       
+      </section>  
+      <p class="score"></p>
+      <a href="jeu.html" class="link">Recommencer</a>
+  </body>
+  <script src="jeu.js"></script>
+</html>
+

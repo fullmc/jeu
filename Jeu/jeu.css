@@ -1,0 +1,110 @@
+@font-face {
+	font-family:'ralewayregular' ;
+	src: url(/font/raleway-regular-webfont.woff) format('woff');
+}
+
+*
+{
+	margin : 0;
+	padding: 0;
+	font-family:'ralewayregular','arial','trebuchet MS';
+}
+body{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background-color: rgb(212, 99, 29);
+	flex-direction: column;
+	width: 100%;
+}
+
+p{
+	color: white;
+}
+section{
+	width: 600px;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction : column;
+}
+.message{
+	color: #fff;
+	padding: 5px;
+	margin-bottom:25px;
+	border-radius:10px;
+	width: 120px;
+	text-align: center;
+}
+.calcul{
+	display:flex;
+	font-size: 40px;
+}
+
+h1, h2{
+	margin: 0 10px;
+	color:white;
+}
+h2{
+	padding:20px;
+}
+
+a{
+	text-decoration: none;
+	color: white;
+	border: 1px solid white;	
+	padding: 8px 15px;
+}
+
+.rep{
+	border: none;
+	border-bottom: 1px white solid;
+  box-shadow: none;
+	height: 25px;
+	background-color: transparent;
+	width:150px;
+	color: #fff;
+	font-size: 15px;
+}
+
+section input[type="submit"]{
+	border:none;
+	margin: 15px 15px;
+	height:35px;
+	width:200px;
+	background-color:rgb(136, 62, 17); /*possible de mettre "transparent"*/
+	color:white;
+	border-radius: 10px 10px 10px 10px;
+	transition: 1s;
+	text-transform: uppercase;
+	animation: slidein 1s;
+}
+
+section input[type="submit"]:hover{
+	cursor:pointer;
+	letter-spacing: 2px;
+	transition: 0.5s; /*ajouter une petite transition bg*/
+}
+@keyframes slidein{
+	from {
+		width: 0px;
+		height : 0px;
+		color: transparent;		
+	}
+}
+
+.score{
+	font-size: 25px;
+  color: #fff;
+  text-align: center;
+}
+
+.rep, .sub, .message, .calcul, .score{
+	margin: 10px;
+}
+
+#timer{
+	color:#fff;
+	font-weight: bold;
+}
